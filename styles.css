@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8e8f4; /* Couleur de fond douce */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #e74c3c; /* Rouge doux */
+    margin-bottom: 10px;
+}
+
+.container p {
+    color: #333333; /* Couleur de texte sombre */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ... Autres styles ... */
+
+.button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: hotpink; /* Rouge plus vif au survol */
+}
+
+#happy-birthday {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFD700; /* Or doux */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#happy-birthday h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Rouge doux */
+}
+
+#happy-birthday p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333333; /* Couleur de texte sombre */
+}
+
+#heart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.heart-icon {
+    font-size: 80px;
+    color: #e74c3c; /* Rouge doux */
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.letter {
+    display: none;
+    background-color: mediumpurple;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    max-height: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.letter .heart-icon {
+    font-size: 80px;
+    color: #e74c3c;
+    animation: heartbeat 1s infinite;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333333;
+}
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.options-container label {
+    display: flex;
+    align-items: center;
+}
+
+.options-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#feedback {
+    color: deeppink;
+    font-size: 16px;
+    margin-top: 10px;
+}
